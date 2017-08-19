@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <title>仲说纷坛</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/topBar.css" type="text/css" rel="stylesheet">
+    <link href="css/homePage.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/audioplayer.css" />
+</head>
+<body>
+
+<div id="main">
+    <div id="main-container">
+        <div id="page-1" class="section">
+                <div id="header">
+                    <div id="nav-container">
+                        <a class="logo" href="#"><img src="img/logo.png" style="width:60px;height:60px;"></a>
+                        <div id="menu-ico"></div>
+                        <div class="menu-clearfix"></div>
+                        <div><form id="search-area">
+                            <input type="search" class="input-default" placeholder="Search">
+                        </form></div>
+                        <div id="menu">
+                            <div id="menu-list">
+                                <ul class="menu-list">
+                                    <li><a  href="index.html" class="nav-active">首页</a></li>
+                                    <li><a  href="tb/zkutb.html">贴吧</a></li>
+                                    <li><a  href="pages/niming.html">悄悄说</a></li>
+                                    <!--<li><a href="#">换书</a></li>-->
+                                    <li><a  href="pages/wenda.html">问答</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="page-1-container"  >
+                <div class="img-change"></div>
+                <div id="login-button-group">
+                    <a href="pages/register.html"><button id="login-button">登录</button></a>
+                    <a href="pages/register.html"><button id="reg-button">立即注册</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="page-2"  class="section">
+            <div id="page-2-container" class="page-text">
+                <h1>贴吧</h1>
+                <p>停电烦？出行难？<br>噼里啪啦，贴吧一下。</p>
+                <div class="page-2-button section-button"><a target="_blank" href="tb/zkutb.html">进入贴吧 >    </a></div></div>
+        </div>
+        <div id="page-3"  class="section">
+            <div id="page-3-container" class="page-text"><h1>悄悄说</h1><p>藏在心里，不敢告诉ta的话。<br>在这里，悄悄说。</p>
+                <div class="page-3-button section-button"><a target="_blank" href="pages/niming.html">悄悄说 ></a></div></div></div>
+
+        <div id="page-4"  class="section" >
+            <div id="page-4-container" class="page-text"><h1>问答</h1><p>怎么做题？谁要换书？<br>你来问，我来答。</p>
+                <div class="page-4-button section-button"><a target="_blank" href="pages/wenda.html">问下下 ></a></div>
+            </div>
+        </div>
+    </div>
+        <ul id="page-menu-list">
+            <li data-menuanchor="page1" class="active"><a href="#page1"></a></li>
+            <li data-menuanchor="page2"><a href="#page2"></a></li>
+            <li data-menuanchor="page3"><a href="#page3"></a></li>
+            <li data-menuanchor="page4"><a href="#page4"></a></li>
+        </ul>
+    <div/>
+    <div id="login-sub">
+        <div id="login-sub-close"></div>
+        <!--<div id="login-sub-container">-->
+            <!--<form>-->
+                <!--<input id="user-name" placeholder="用户名/邮箱"><br>-->
+                <!--<input id="password" placeholder="密码"><br>-->
+                <!--<button ><a href="pages/register.html" id="submit" target="_blank">登录</a></button>-->
+                <!--<div id="remember">-->
+                    <!--<input id="remember-checkbox" name="xx" type="checkbox" value="" />-->
+                    <!--<label for="remember-checkbox">记住我</label>-->
+                    <!--<a href="#">忘记密码？</a>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="reg-sub">-->
+        <!--<div id="reg-sub-close"></div>-->
+        <!--<div id="reg-sub-container">-->
+            <!--<form action="php/reg.php" method="post">-->
+                <!--<input id="reg-user-name" placeholder="注册邮箱" name="email"><br>-->
+                <!--<input id="reg-password" placeholder="密码" name="password" type="password"><br>-->
+                <!--<input type="submit" value="注册" id="reg-submit">-->
+                <!--&lt;!&ndash;<button id="reg-submit">注册</button>&ndash;&gt;-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+    </div>
+<div id="wrapper-container">
+    <div id="wrapper" >
+        <audio preload="auto" controls>
+            <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+            <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+            <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+        </audio>
+    </div>
+    <div id="wrapper-btn">></div>
+    <div style="clear: both"></div>
+</div>
+
+
+<script src="javascipt/audioplayer.min.js"></script>
+<!--<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>-->
+<script src="javascipt/jquery-1.8.3.min.js" type="text/javascript" rel="script"></script>
+<script src="javascipt/jquery.fullPage.js" type="text/javascript" rel="script"></script>
+<script src="javascipt/js.js" type="text/javascript" rel="script"></script>
+<script src="javascipt/menuIcon.js" type="text/javascript" rel="script"></script>
+
+</body>
+</html>

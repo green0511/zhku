@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+    body{
+        background-color: #23b684;
+    }
+</style>
+<body>
+<div class="box"></div>
+<script src="../javascipt/preloadjs.min.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/Stats.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/three.min.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/TweenMax.min.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/jquery-1.8.3.min.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/assets.js" type="text/javascript" rel="script"></script>
+<script src="../javascipt/image-gallery-three.js" type="text/javascript" rel="script"></script>
+<script>
+    $(function(){
+        $(".box").ig3js({
+            manifest: [
+                {src:"zku_1.jpg", id:"image1"},
+                {src:"zku_2.jpg", id:"image2"},
+                {src:"zku_3.jpg", id:"image3"},
+                {src:"zku_4.jpg", id:"image4"},
+                {src:"zku_5.jpg", id:"image5"},
+                {src:"zku_6.jpg", id:"image6"},
+            ],
+            imagePath: '../img/'
+        });
+    });
+</script>
+</body>
+</html>

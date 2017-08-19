@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <link href="../css/mobileMenu.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/topBar.css" type="text/css" rel="stylesheet">
+    <link href="../css/reg.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div id="nav-container">
+        <a class="logo" href="#"><img src="../img/logo.png" style="width:60px;height:60px;"></a>
+        <div id="menu-ico">
+            <a href="#cd-nav" class="cd-nav-trigger">Menu
+                <span class="cd-nav-icon"></span>
+
+                <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                    <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                </svg>
+            </a>
+            <div id="cd-nav" class="cd-nav">
+                <div class="cd-navigation-wrapper">
+                    <div class="cd-half-block">
+                        <h2>仲说纷坛</h2>
+                        <nav>
+                            <ul class="cd-primary-nav">
+                                <li><a href="../index.html" >首页</a></li>
+                                <li><a href="../tb/zkutb.html">仲园论坛</a></li>
+                                <li><a href="../pages/niming.html">悄悄说</a></li>
+                                <li><a href="../pages/wenda.html">问答</a></li>
+                                <li><a href="../pages/register.html" class="selected">登录/注册</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- .cd-half-block -->
+
+                    <div class="cd-half-block">
+                        <!--<address>-->
+                        <!--<ul class="cd-contact-info">-->
+                        <!--<li><a href="mailto:info@myemail.co">info@myemail.co</a></li>-->
+                        <!--<li>0244-12345678</li>-->
+                        <!--<li>-->
+                        <!--<span>MyStreetName 24</span>-->
+                        <!--<span>W1234X</span>-->
+                        <!--<span>London, UK</span>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</address>-->
+                    </div> <!-- .cd-half-block -->
+                </div> <!-- .cd-navigation-wrapper -->
+            </div> <!-- .cd-nav -->
+        </div>
+
+        <div class="menu-clearfix"></div>
+        <div><form id="search-area">
+            <input type="search" class="input-default" placeholder="Search">
+        </form></div>
+        <div id="menu">
+            <div id="menu-list">
+                <ul class="menu-list">
+                    <li><a href="../index.html"  class="nav-active">首页</a></li>
+                    <li><a href="../tb/zkutb.html">贴吧</a></li>
+                    <li><a href="../pages/niming.html">悄悄说</a></li>
+                    <!--<li><a href="#">换书</a></li>-->
+                    <li><a href="../pages/wenda.html">问答</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reg-container">
+    <div class="reg-top">
+        <div class="left reg-top-active"><p>1.填写信息</p></div>
+        <div class="left"><p>2.激活邮箱</p></div><br>
+
+    </div>
+    <hr style="border-top: 1px solid #b2b2b2;margin: 0"/>
+    <div class="reg-form">
+        <form action="../php/reg.php" method="post">
+            <label for="email">邮箱：</label><br/><br/>
+            <input type="email" name="email" id="email" class="reg-input"><br/>
+            <label for="password">密码：</label><br/><br/>
+            <input type="password" name="password" id="password" class="reg-input"><br/>
+            <label for="email">性别：</label>
+            <input type="radio" id="male" name="sex">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="sex">
+            <label for="female">女</label>
+            <input type="radio" id="secret" name="sex">
+            <label for="secret">保密</label><br/><br/>
+            <label for="secret">生日：</label>
+            <select id="birthday">
+                <option value="1">2015</option>
+                <option value="2">2014</option>
+                <option value="3">2013</option>
+                <option value="4">2012</option>
+                <option value="5">2011</option>
+                <option value="6">2010</option>
+                <option value="7">2009</option>
+                <option value="8">2008</option>
+                <option value="9">2007</option>
+                <option value="10">2006</option>
+                <option value="11">2005</option>
+                <option value="12">2004</option>
+                <option value="13">2003</option>
+                <option value="14">2002</option>
+                <option value="15">2001</option>
+                <option value="16">2000</option>
+                <option value="17">1999</option>
+                <option value="18">1998</option>
+                <option value="19">1997</option>
+                <option value="20">1996</option>
+                <option value="21">1995</option>
+                <option value="22">1994</option>
+                <option value="23">1993</option>
+                <option value="24">1992</option>
+                <option value="25">1991</option>
+                <option value="26">1990</option>
+                <option value="27">1989</option>
+                <option value="28">1988</option>
+            </select>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="28">29</option>
+                <option value="28">30</option>
+                <option value="28">31</option>
+            </select>
+            <br/><br/>
+            <input type="submit" value="注册" class="reg-button reg-sumit">
+            <input type="reset" value="重置" class="reg-button"><br/>
+        </form>
+    </div>
+</div>
+<script src="../javascipt/jquery-1.8.3.min.js"></script>
+<script src="../javascipt/modernizr.js"></script>
+<script src="../javascipt/main.js"></script>
+</body>
+</html>

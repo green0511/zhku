@@ -1,0 +1,512 @@
+body {
+    background-color: #23b684;
+}
+
+#main-container {
+    height: 100%;
+    margin: 30px auto;
+    position: relative;
+    width: 1200px;
+}
+
+.left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* #上方轮播图
+=========================================# */
+#top-container {
+    padding-top: 10px;
+    width: 840px;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+#top-list {
+    width: 5100px;
+    height: 225px;
+    position: absolute;
+    z-index: 1;
+}
+.top-list-title{
+    color: #dddddd;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    text-indent: 0.5em;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#top-list img{
+    float: left;
+}
+
+#top-buttons {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    z-index: 2;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#top-buttons span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-right: 5px;
+}
+
+#top-buttons .on {
+    background-color: #23b684;
+}
+
+.arrow {
+    cursor: pointer;
+    display: none;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.arrow:hover {
+    display: block;
+}
+
+#top-container:hover .arrow,.top-list-title{
+    display: block;
+}
+
+#prev {
+    background-image: url("../img/pre.png");
+    left: 10px;
+}
+
+#next {
+    background-image: url("../img/next.png");
+    right: 10px;
+}
+/* #左部导航栏
+=========================================# */
+.tb-left-container {
+    width: 10%;
+    background-color: #ffffff;
+}
+
+.tb-left-nav {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.tb-left-nav li a{
+    color: #696969;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.tb-left-nav a:hover {
+    color: #000000;
+}
+
+/* #中部主体
+=========================================# */
+.tb-forum-container {
+    width: 75%;
+}
+
+.tb-forum-main {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.tb-forum-top {
+    width: 100%;
+    height: 245px;
+    background-color: #ffffff;
+}
+
+.tb-forum-mid {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin-top: 12px;
+}
+
+.tb-forum-nav {
+    background-color: #f2f2f2;
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    color: #555555;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.tb-forum-nav ul {
+    margin-left: 10px;
+    width: 100%;
+}
+.nav-user{
+    display: none;
+}
+.tb-forum-nav ul li{
+    width: 100px;
+}
+.tb-forum-nav ul li a{
+    display: block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.tb-forum-nav ul li:hover {
+    background-color: #d2d2d2;
+}
+
+.tb-forum-nav-active {
+    border-bottom: 1px solid #23b684;
+}
+
+/* #右部信息栏
+=========================================# */
+.tb-right-container {
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 30px;
+}
+
+.tb-right-user-pic {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+    overflow: hidden;
+
+}
+
+.tb-right-user-pic img {
+    width: 50px;
+    height: 50px;
+}
+
+.tb-right-user-info {
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 100%;
+}
+
+.tb-right-user-info p {
+    color: #23b684;
+    font-size: 14px;
+}
+
+.tb-right-btn {
+    display: block;
+    background-color: #999999;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 200%;
+    height: 40px;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.tb-right-btn:hover {
+    color: #ffffff;
+    background-color: #23b684;
+}
+.tb-follow {
+    margin-top: 10px;
+}
+.tb-follow div{
+    width: 48px;
+    height: 30px;
+    float: left;
+}
+.tb-follow div p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.tb-follow div h2{
+    font-size: 12px;
+    color: #777777;
+}
+.tb-right-tools{
+    color: #555555;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #b2b2b2;
+}
+.tb-right-tools div{
+    display: block;
+    line-height: 300%;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.tb-right-tools a{
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 25%;
+    text-align: left;
+}
+.tb-right-tools span{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -7px;
+    left: 20%;
+}
+.tb-right-tools .tool-mes{
+    background-image: url("../img/message.png");
+}
+.tb-right-tools .tool-col{
+    background-image: url("../img/collection.png");
+}
+.tb-right-tools .tool-per{
+    background-image: url("../img/person.png");
+}
+.tb-right-tools .tool-set{
+    background-image: url("../img/setting.png");
+}
+.tb-right-tools div:hover{
+    background-color: #b2b2b2;
+    color: #ffffff;
+}
+/* #帖子列表样式
+=========================================# */
+.tb-forum-tiezi {
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    color: #999999;
+}
+.tb-forum-tiezi:hover{
+    background-color: #e9e9e9;
+}
+
+.tiezi-li-left {
+    display: block;
+    width: 5%;
+    height: 40px;
+    text-align: center;
+    line-height: 300%;
+    margin: 20px;
+    background-color: #d2d2d2;
+    font-size: 12px;
+}
+
+.tiezi-li-right {
+    width: 85%;
+    border-bottom: 1px #d2d2d2 dashed;
+}
+
+.tiezi-li-title {
+    font-size: 18px;
+    color: #23b684;
+    width: 80%;
+    text-align: left;
+    line-height: 300%;
+    height: 50px;
+}
+
+.tiezi-li-author {
+    line-height: 300%;
+    float: right;
+}
+
+.tiezi-li-detail-text {
+    width: 80%;
+}
+
+.tiezi-li-detail-time {
+    line-height: 200%;
+    float: right;
+}
+.pub-btn{
+    background-color: #6796b2;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 80px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+/*#移动设备
+=====================================#*/
+@media screen and (max-width: 900px) {
+    body {
+        background-color: #ffffff;
+    }
+    /*主体容器*/
+    #main-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /*轮播图容器*/
+    #top-container{
+        display: none;
+    }
+    /*轮播图*/
+    .tb-forum-top{
+        display: none;
+    }
+    /*左部导航栏*/
+    .tb-left-container{
+        display: none;
+    }
+    /*帖子容器*/
+    .tb-forum-container{
+        width: 100%;
+    }
+    .tb-forum-main{
+        width: 100%;
+        margin: 0;
+    }
+    .tb-forum-mid{
+        margin: 0;
+    }
+    /*导航"我"标签*/
+    .nav-user{
+        display: inherit;
+    }
+    .tb-forum-nav ul li{
+        width: 25%;
+    }
+    /*右侧信息栏*/
+    .tb-right-container{
+        display: none;
+    }
+    /*"我"页面设置*/
+    .tb-user{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .tb-user-pic {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background-color: #d2d2d2;
+        border-radius: 50%;
+        border: 1px solid #d2d2d2;
+        overflow: hidden;
+
+    }
+    .tb-user-pic img {
+        width: 80px;
+        height: 80px;
+    }
+    .tb-user-info {
+        width: 100%px;
+        height: 100px;
+        margin: 10px auto;
+        text-align: center;
+        line-height: 100%;
+    }
+    .tb-user-info p {
+        color: #23b684;
+        font-size: 14px;
+    }
+
+    .tb-follow {
+        margin-top: 10px;
+        width: 100%;
+        height: 100px;
+    }
+    .tb-follow div{
+        width: 33%;
+        height: 30px;
+        float: left;
+    }
+    .tb-follow div p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .tb-follow div h2{
+        font-size: 12px;
+        color: #777777;
+    }
+    .tb-right-tools{
+        color: #555555;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #b2b2b2;
+    }
+    .tb-right-tools div{
+        display: block;
+        line-height: 300%;
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        border-top: 1px solid #e2e2e2;
+    }
+    .tb-right-tools a{
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 15%;
+        text-align: left;
+    }
+    .tb-right-tools span{
+        float: left;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        display: block;
+        position: relative;
+        top: 50%;
+        margin-top: -15px;
+        left: 10%;
+    }
+    .pub-btn{
+        display: inherit;
+    }
+}

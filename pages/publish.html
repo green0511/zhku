@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <title>发表帖子</title>
+    <link href="../css/mobileMenu.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/topBar.css" type="text/css" rel="stylesheet">
+    <link href="../css/pubStyle.css" type="text/css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #23b684;
+        }
+        .editer-container{
+            width: 1200px;
+            margin: 20px auto;
+            background-color: #FFFFFF;
+            height: 90%;
+        }
+        .editer{
+            width: 550px;
+            padding: 20px;
+        }
+        .editer input{
+            width: 100px;
+            height: 25px;
+            color: #FFFFFF;
+            background-color: #23b684;
+            font-size: 14px;
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="nav-container">
+        <a class="logo" href="#"><img src="../img/logo.png" style="width:60px;height:60px;"></a>
+        <div id="menu-ico">
+            <a href="#cd-nav" class="cd-nav-trigger">Menu
+                <span class="cd-nav-icon"></span>
+
+                <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                    <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                </svg>
+            </a>
+            <div id="cd-nav" class="cd-nav">
+                <div class="cd-navigation-wrapper">
+                    <div class="cd-half-block">
+                        <h2>仲说纷坛</h2>
+                        <nav>
+                            <ul class="cd-primary-nav">
+                                <li><a href="../index.html" class="selected">首页</a></li>
+                                <li><a href="../tb/zkutb.html">仲园论坛</a></li>
+                                <li><a href="../pages/niming.html">悄悄说</a></li>
+                                <li><a href="../pages/wenda.html">问答</a></li>
+                                <li><a href="../pages/register.html">登录/注册</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- .cd-half-block -->
+
+                    <div class="cd-half-block">
+                        <!--<address>-->
+                        <!--<ul class="cd-contact-info">-->
+                        <!--<li><a href="mailto:info@myemail.co">info@myemail.co</a></li>-->
+                        <!--<li>0244-12345678</li>-->
+                        <!--<li>-->
+                        <!--<span>MyStreetName 24</span>-->
+                        <!--<span>W1234X</span>-->
+                        <!--<span>London, UK</span>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</address>-->
+                    </div> <!-- .cd-half-block -->
+                </div> <!-- .cd-navigation-wrapper -->
+            </div> <!-- .cd-nav -->
+        </div>
+
+        <div class="menu-clearfix"></div>
+        <div><form id="search-area">
+            <input type="search" class="input-default" placeholder="Search">
+        </form></div>
+        <div id="menu">
+            <div id="menu-list">
+                <ul class="menu-list">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../tb/zkutb.html" class="nav-active">贴吧</a></li>
+                    <li><a href="../pages/niming.html">悄悄说</a></li>
+                    <!--<li><a href="#">换书</a></li>-->
+                    <li><a href="../pages/wenda.html">问答</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="editer-container">
+    <div class="editer">
+    <textarea name="content" id="content" style="display:none"></textarea>
+    <iframe src="../Edit/editor.htm?id=content&ReadCookie=0" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="No" width="621" height="457"></iframe>
+        <input type="submit">
+        <input type="reset">
+</div>
+</div>
+<script src="../javascipt/jquery-1.8.3.min.js"></script>
+<script src="../javascipt/modernizr.js"></script>
+<script src="../javascipt/main.js"></script>
+</body>
+</html>

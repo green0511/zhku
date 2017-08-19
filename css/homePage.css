@@ -1,0 +1,367 @@
+/* #首页元素通用设置
+===================================  */
+.page-text h1 {
+    color: #23b684;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.page-text p {
+    color: #23b684;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.section-button {
+    width: 200px;
+    height: 40px;
+    background-color: #23b684;
+    font-size: 18px;
+    line-height: 200%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin: 30px auto;
+}
+
+.section-button a {
+    display: block;
+    width: 100%;
+}
+/* #Body
+========================================# */
+
+
+#page-1 {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#page-2-container {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+}
+
+#page-2 {
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+}
+
+#page-3 {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/page3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#page-3-container {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+}
+
+#page-3-container h1, #page-3-container p {
+    color: #b2b2b2;
+}
+.page-3-button {
+    background-color: #b2b2b2;
+    color: #032e46;
+}
+
+#page-4 {
+    background-image: url("../img/page4.jpg");
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+
+#page-4-container {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+}
+
+#page-4-button {
+    background-color: #23b684;
+    color: #032e46;
+}
+
+
+/* #首页右侧按钮组
+========================================# */
+#page-menu-list{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    list-style-type: none;
+    z-index: 1;
+}
+
+#page-menu-list li a {
+    display: block;
+    margin: 15px 0;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+#page-menu-list .active a {
+    color: #fff;
+    background-color: #23b684;
+}
+
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #fff;
+}
+
+/* #登录注册面板
+==================================# */
+#login-sub, #reg-sub {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-color: #ffffff;
+    z-index: 2;
+    top: 30%;
+    left: 40%;
+    display: none;
+}
+
+#login-sub-container, #reg-sub-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+}
+
+#login-sub-close, #reg-sub-close {
+    background-image: url("../img/close.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    float: right;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#login-sub-container input, #reg-sub-container input {
+    width: 98%;
+    height: 30px;
+    margin: 10px auto;
+    text-indent: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #d2d2d2;
+}
+
+#login-sub-container button, #reg-sub-container #reg-submit {
+    margin: 10px auto;
+    background-color: #23b684;
+    width: 98%;
+    height: 30px;
+    border: 1px solid #23b684;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#remember input {
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+}
+
+#remember {
+    font-size: 15px;
+}
+
+#remember a {
+    float: right;
+}
+
+#remember a:hover {
+    color: #23b684;
+}
+#page-2-container h1,#page-3-container h1,#page-4-container h1,.img-change{
+    opacity: 0;
+    position: relative;
+    top:-50px;
+}
+.active .fp-tableCell #page-2-container h1,.active .fp-tableCell #page-3-container h1,
+.active .fp-tableCell #page-4-container h1,.active .img-change{
+    -webkit-animation: ele-show 2s ease forwards;
+    -webkit-animation-delay: .5s;
+}
+
+@-webkit-keyframes ele-show{
+    0%{opacity: 0;top: -50px}
+    100%{opacity: 1;top: 0px}
+}
+
+#page-2-container p,#page-3-container p,#page-4-container p,.img-change{
+    opacity: 0;
+    position: relative;
+    top: 50px;
+}
+.active .fp-tableCell #page-2-container p,.active .fp-tableCell #page-3-container p,
+.active .fp-tableCell #page-4-container p,.active .img-change{
+    -webkit-animation: ele-show2 2s ease forwards;
+    -webkit-animation-delay: .5s;
+}
+.img-change{
+    -webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes ele-show2{
+    0%{opacity: 0;top: 50px}
+    100%{opacity: 1;top: 0px}
+}
+
+.page-2-button,.page-3-button,.page-4-button{
+    position: relative;
+    left: -50px;
+    opacity: .2;
+}
+.active .fp-tableCell #page-2-container .page-2-button,
+.active .fp-tableCell #page-3-container .page-3-button,
+.active .fp-tableCell #page-4-container .page-4-button{
+    -webkit-animation: ele-show3 2s ease forwards;
+    -webkit-animation-delay: .5s;
+}
+@-webkit-keyframes ele-show3{
+    0%{opacity: .5;left: -50px}
+    100%{opacity: 1;left: 0px}
+}
+/*大屏幕时首页样式
+=====================================*/
+@media screen and (min-width: 900px) {
+    /*#page1
+    ==========================#*/
+    #page-1-container {
+        width: 420px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: -59px;
+        margin-left: -200px;
+    }
+    .img-change {
+        background-image: url("../img/change.png");
+        width: 100%;
+        height: 88px;
+        background-size: cover;
+        margin-left: -10px;
+    }
+
+    #login-button-group button {
+        margin-left: 15px;
+        width: 180px;
+        height: 30px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+        color: white;
+        float: left;
+        background-color: transparent;
+        border: 1px solid white;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #login-button-group button:hover {
+        background-color: #23b684;
+        border: 1px solid #23b684;
+    }
+
+    /*#page-2-container{*/
+        /*opacity: 0;*/
+    /*}*/
+
+}
+/*移动设备时首页样式
+=====================================*/
+@media screen and (max-width: 900px){
+    /*#page1
+    ==========================#*/
+    #page-1-container {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+        top: 30%;
+        z-index: 0;
+    }
+
+
+    .img-change {
+        width: 320px;
+        height: 70px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url("../img/change.png");
+    }
+
+    #login-button-group button {
+        margin:  0 auto;
+        width: 180px;
+        height: 30px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #login-button-group button:hover {
+        background-color: #23b684;
+        border: 1px solid #23b684;
+    }
+
+    .page-text h1 {
+        color: #23b684;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .page-text p {
+        color: #23b684;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .section-button {
+        width: 150px;
+        height: 30px;
+        background-color: #23b684;
+        font-size: 14px;
+        line-height: 200%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        margin: 10px auto;
+    }
+    .section-button a {
+        display: block;
+        width: 100%;
+    }
+    .page-3-button {
+        background-color: #b2b2b2;
+        color: #032e46;
+    }
+
+}

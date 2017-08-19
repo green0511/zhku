@@ -1,0 +1,21 @@
+.pic-container{
+    width: 98%;
+}
+#container{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    margin: 0 auto;
+}
+.box{
+    padding: 3px;
+    float: left;
+}
+.box_img{
+    padding: 5px;
+    box-shadow: 0 0 5px #b2b2b2;
+}
+.box_img img{
+    width: 150px;
+    height: auto;
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <title>悄悄说</title>
+    <link href="../css/mobileMenu.css" type="text/css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/topBar.css" type="text/css" rel="stylesheet">
+    <link href="../css/niming.css" type="text/css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/audioplayer.css" />
+</head>
+<body>
+<div id="header">
+    <div id="nav-container">
+        <a class="logo" href="#"><img src="../img/logo.png" style="width:60px;height:60px;"></a>
+        <div id="menu-ico">
+            <a href="#cd-nav" class="cd-nav-trigger">Menu
+                <span class="cd-nav-icon"></span>
+
+                <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+                    <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                </svg>
+            </a>
+            <div id="cd-nav" class="cd-nav">
+                <div class="cd-navigation-wrapper">
+                    <div class="cd-half-block">
+                        <h2>仲说纷坛</h2>
+                        <nav>
+                            <ul class="cd-primary-nav">
+                                <li><a href="../index.html">首页</a></li>
+                                <li><a href="../tb/zkutb.html">仲园论坛</a></li>
+                                <li><a href="../pages/niming.html"  class="selected">悄悄说</a></li>
+                                <li><a href="../pages/wenda.html">问答</a></li>
+                                <li><a href="../pages/register.html">登录/注册</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- .cd-half-block -->
+
+                    <div class="cd-half-block">
+                        <!--<address>-->
+                        <!--<ul class="cd-contact-info">-->
+                        <!--<li><a href="mailto:info@myemail.co">info@myemail.co</a></li>-->
+                        <!--<li>0244-12345678</li>-->
+                        <!--<li>-->
+                        <!--<span>MyStreetName 24</span>-->
+                        <!--<span>W1234X</span>-->
+                        <!--<span>London, UK</span>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</address>-->
+                    </div> <!-- .cd-half-block -->
+                </div> <!-- .cd-navigation-wrapper -->
+            </div> <!-- .cd-nav -->
+        </div>
+
+        <div class="menu-clearfix"></div>
+        <div><form id="search-area">
+            <input type="search" class="input-default" placeholder="Search">
+        </form></div>
+        <div id="menu">
+            <div id="menu-list">
+                <ul class="menu-list">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../tb/zkutb.html">贴吧</a></li>
+                    <li><a href="../pages/niming.html"  class="nav-active">悄悄说</a></li>
+                    <!--<li><a href="#">换书</a></li>-->
+                    <li><a href="../pages/wenda.html">问答</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="niming-container">
+    <div class="niming-sidebar left">
+        <div class="niming-user-container">
+            <div class="niming-user-pic"><img src="../img/logo.png"></div>
+            <div class="niming-user-info">
+                <p>品学兼优抠鼻男</p>
+                <p>VIP5</p>
+                <div class="niming-follow">
+                    <div style="border-right: 1px solid #d2d2d2"><p>337</p>
+
+                        <h2>关注</h2></div>
+                    <div style="border-right: 1px solid #d2d2d2"><p>448</p>
+
+                        <h2>粉丝</h2></div>
+                    <div><p>2520</p>
+
+                        <h2>聊天</h2></div>
+                </div>
+                <div class="niming-rep">
+                    <textarea class="niming-input-box" placeholder="发表聊天..." id="niming-text" value=""></textarea>
+                    <input class="niming-submit" type="submit" id="niming-submit">
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="area">
+                <ul id="con_01">
+                    <li><a>湘飘飘木桶饭</a></li>
+                    <li><a>日日鲜</a></li>
+                    <li><a href="http://waimai.koubei.com/shop_detail.htm?spm=0.0.0.0.H0kv8M&shopId=312330&city=440100">光头佬</a></li>
+                    <li><a>陈记美食</a></li>
+                    <li><a>贝克汉堡</a></li>
+                    <li><a href="http://waimai.koubei.com/shop_detail.htm?spm=0.0.0.0.5P3MPA&shopId=336909&city=440100">东门茶餐厅</a></li>
+                    <li><a>沙县小吃</a></li>
+                    <li><a>小潮汕</a></li>
+                </ul>
+                <ul id="con_02">
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    <div class="niming-main-container left">
+        <div class="niming-main-title">
+            <h1>聊天列表</h1>
+        </div>
+        <ul class="niming-list" id="niming-list">
+            <li>
+                <div class="niming-user-img">
+                    <img src="../icons/ico1.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-pubtime"><p>31分钟前</p></div>
+                    <div class="niming-content">有没有人也选了会展概论（周一下午后两节）？因为我要去实习，所以第八周不能去课室交作业
+                        ，有没有好心人愿意帮我交一下作业T T跪求帮忙
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 1</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="niming-user-img">
+                    <img src="../icons/ico2.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-content">昨晚生态旅游课老师有点名吗
+                    </div>
+                    <div class="niming-pubtime"><p>43分钟前</p></div>
+
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 1</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+
+                <div class="niming-user-img">
+                    <img src="../icons/ico3.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-content">帮转 林蠢猪饭卡丢失，饭卡上没有卡贴，只用油性笔写上了专业班级姓名，不过可能
+                        看不太清了。希望好心人捡到能归还给他，谢谢。捡到请联系宿舍133。
+                    </div>
+                    <div class="niming-pubtime"><p>1小时前</p></div>
+
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 2</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞 1</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+
+                <div class="niming-user-img">
+                    <img src="../icons/ico4.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-content">最近想和男朋友一起看电影....求推荐一下有什么好的男朋友...
+                    </div>
+                    <div class="niming-pubtime"><p>1小时前</p></div>
+
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 7</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+
+                <div class="niming-user-img">
+                    <img src="../icons/ico5.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-content">请排校车的各位守规矩好不好，一个人的位置给了六个人上...即时你帮别人霸位也霸得明显一点
+                        ...好让别人知道前面有多少人..
+                    </div>
+                    <div class="niming-pubtime"><p>1小时前</p></div>
+
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 2</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+
+                <div class="niming-user-img">
+                    <img src="../icons/ico6.png"></img>
+                </div>
+                <div class="niming-list-container">
+                    <div class="niming-name">
+                        <p>某同学</p>
+                    </div>
+                    <div class="niming-content">求海珠图书馆一楼的wifi密码？
+                    </div>
+                    <div class="niming-pubtime"><p>1小时前</p></div>
+
+                </div>
+                <div style="clear:both"></div>
+                <div class="niming-feed">
+                    <ul>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+                        <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 1</a></li>
+                        <li><a target="_blank" href="../pages/lookForward.html">赞</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="wrapper-container">
+    <div id="wrapper" >
+        <audio preload="auto" controls>
+            <source src="../audio/BlueDucks_FourFlossFiveSix.mp3">
+            <source src="../audio/BlueDucks_FourFlossFiveSix.ogg">
+            <source src="../audio/BlueDucks_FourFlossFiveSix.wav">
+        </audio>
+    </div>
+    <div id="wrapper-btn">></div>
+</div>
+<div class="pub-btn">+</div>
+<script src="../javascipt/jquery-1.8.3.min.js"></script>
+<script src="../javascipt/audioplayer.min.js"></script>
+<script src="../javascipt/modernizr.js"></script>
+<script src="../javascipt/main.js"></script>
+<!--<script src="../javascipt/tb-js.js" type="text/javascript" rel="script"></script>-->
+<script>
+    var timer = null;
+    var area=document.getElementById("area");
+    var con_01=document.getElementById("con_01");
+    var con_02=document.getElementById("con_02");
+    var num=0;
+    function around_text(){
+        con_02.innerHTML = con_01.innerHTML;
+        timer = setInterval(show,50);
+    }
+    area.onmouseover = function(){
+        clearInterval(timer);
+    }
+    area.onmouseout = function(){
+        timer = setInterval(show,50);
+    }
+    around_text();
+    function show(){
+        if(-num == con_01.offsetHeight){
+            num = 0;
+        }
+        area.style.marginTop=num+'px';
+        num--;
+    }
+
+    var btn = document.getElementById("wrapper-btn");
+    var wraCon = document.getElementById("wrapper-container");
+    var timer = null;
+    var easeOut = function (t, b, c, d) {
+        return -c * (t /= d) * (t - 2) + b;
+    };
+    btn.onclick = function(){
+        clearInterval(timer);
+        if(wraCon.offsetLeft == -300){
+            clearInterval(timer);
+            timer = setInterval(function(){
+                console.log("out");
+                btn.innerHTML = "<";
+                var speed = wraCon.offsetLeft/10*9;
+                wraCon.style.left = speed + "px";
+                if(wraCon.offsetLeft >= 0){
+                    wraCon.style.left = 0;
+                    clearInterval(timer);
+                }
+            },30)
+        }else{
+            clearInterval(timer);
+            var temp = 0
+            timer = setInterval(function(){
+                console.log("in");
+                btn.innerHTML = ">";
+                var speed = 50;
+                temp -= speed;
+                wraCon.style.left = temp + "px";
+                if(wraCon.offsetLeft < -300){
+                    wraCon.style.left = -300 + "px";
+                    clearInterval(timer);
+                }
+            },30)
+        }
+    }
+
+
+//    <li>
+//    <div class="niming-user-img">
+//    <img src="../icons/ico1.png"></img>
+//    </div>
+//    <div class="niming-list-container">
+//    <div class="niming-name">
+//    <p>某同学</p>
+//    </div>
+//    <div class="niming-pubtime"><p>31分钟前</p></div>
+//    <div class="niming-content">有没有人也选了会展概论（周一下午后两节）？因为我要去实习，所以第八周不能去课室交作业
+//    ，有没有好心人愿意帮我交一下作业T T跪求帮忙
+//    </div>
+//    </div>
+//    <div style="clear:both"></div>
+//    <div class="niming-feed">
+//    <ul>
+//    <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">收藏</a></li>
+//    <li style="border-right: 1px dashed #d2d2d2"><a target="_blank" href="../pages/lookForward.html">评论 1</a></li>
+//    <li><a target="_blank" href="../pages/lookForward.html">赞</a></li>
+//    </ul>
+//    </div>
+//    </li>
+
+    function prependChild(parent,newChild){
+        if(parent.firstChild){
+            parent.insertBefore(newChild,parent.firstChild);
+        } else {
+            parent.appendChild(newChild);
+        }
+
+        return parent;
+    }
+    var subBtn = document.getElementById("niming-submit");
+    var text = document.getElementById("niming-text");
+    var list = document.getElementById("niming-list");
+    subBtn.onclick = function(){
+        var li = document.createElement("li");
+        var div = document.createElement("div");
+        div.setAttribute( "class", "niming-user-img");
+        var img = document.createElement("img");
+        img.src = "../icons/ico5.png";
+        div.appendChild(img);
+        li.appendChild(div);
+
+        var div2 = document.createElement("div");
+        div2.setAttribute( "class", "niming-list-container");
+        var div3 = document.createElement("div");
+        div3.setAttribute("class","niming-name");
+        var p = document.createElement("p");
+        p.innerHTML = "某同学";
+        div3.appendChild(p);
+        div2.appendChild(div3);
+        var div4 = document.createElement("div");
+        div4.setAttribute( "class", "niming-pubtime");
+        var p2 = document.createElement("p");
+        p2.innerHTML = "刚刚";
+        div4.appendChild(p2);
+        div2.appendChild(div4);
+        var div5 =  document.createElement("div");
+        div5.setAttribute( "class", "niming-content");
+        div5.innerHTML = text.value;
+        div2.appendChild(div5);
+        li.appendChild(div2);
+        var div6 = document.createElement("div");
+        div6.style.clear = "both";
+        li.appendChild(div6);
+        var div7 = document.createElement("div");
+        div7.setAttribute("class","niming-feed");
+        var ul = document.createElement("ul");
+        var li1 = document.createElement("li");
+        li1.style.borderRight = "1px dashed #d2d2d2"
+        var a = document.createElement("a");
+        a.target = "_blank";
+        a.href = "../pages/lookForward.html";
+        a.innerHTML = "收藏";
+        li1.appendChild(a);
+        ul.appendChild(li1);
+        var li2 = document.createElement("li");
+        li2.style.borderRight = "1px dashed #d2d2d2"
+        var a2 = document.createElement("a");
+        a2.target = "_blank";
+        a2.href = "../pages/lookForward.html";
+        a2.innerHTML = "评论";
+        li2.appendChild(a2);
+        ul.appendChild(li2);
+        var li3 = document.createElement("li");
+        var a3 = document.createElement("a");
+        a3.target = "_blank";
+        a3.href = "../pages/lookForward.html";
+        a3.innerHTML = "赞";
+        li3.appendChild(a3);
+        ul.appendChild(li3);
+        div7.appendChild(ul);
+        li.appendChild(div7);
+        //li.innerHTML = text.value;
+        prependChild(list,li);
+
+    }
+</script>
+</body>
+</html>

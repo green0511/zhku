@@ -1,0 +1,267 @@
+body {
+    background-color: #23b684;
+}
+
+.niming-sidebar {
+    width: 20%;
+    padding-bottom: 30px;
+}
+
+.niming-container {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.niming-user-container {
+    padding-top: 20px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.niming-user-pic {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+    overflow: hidden;
+}
+
+.niming-user-pic img {
+    width: 50px;
+    height: 50px;
+}
+
+.niming-user-info {
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 100%;
+}
+
+.niming-user-info p {
+    color: #23b684;
+    font-size: 14px;
+}
+
+.niming-follow {
+    margin: 10px auto;
+    width: 146px;
+    height: 50px;
+    border-bottom: 1px dashed #d2d2d2;
+}
+
+.niming-follow div {
+    width: 48px;
+    height: 30px;
+    float: left;
+}
+
+.niming-follow div p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.niming-follow div h2 {
+    font-size: 12px;
+    color: #777777;
+}
+
+.niming-input-box {
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #23b684;
+    height: 26px;
+    text-indent: 0.5em;
+    transition: height 0.5s ease;
+    resize: none;
+}
+
+.niming-rep {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.niming-input-box:focus {
+    height: 200px;
+}
+
+.niming-input-box:focus .niming-submit {
+    display: inherit;
+}
+
+.niming-submit {
+    margin-top: 10px;
+    width: 50px;
+    height: 25px;
+    float: right;
+    background-color: #ffffff;
+    border: 1px solid #23b684;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #999999;
+    margin-bottom: 10px;
+    /*display: none;*/
+}
+
+.niming-submit:hover {
+    background-color: #23b684;
+    color: #ffffff;
+}
+
+.niming-main-container {
+    width: 80%;
+
+}
+
+.niming-main-title {
+    background-color: #ffffff;
+    width: 96%;
+    height: 40px;
+    margin: 10px auto;
+    margin-top: 0px;
+    line-height: 250%;
+    text-indent: 1em;
+    font-size: 16px;
+}
+
+.clearfix:after {
+    ‍‍content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.niming-list {
+    width: 96%;
+    margin: 0 auto;
+}
+.niming-list-container{
+    float: left;
+    margin-bottom: 10px;
+    width: 80%
+}
+.niming-list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.niming-user-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.niming-user-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid #d2d2d2;
+}
+
+.niming-name {
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+    width: 80px;
+}
+
+.niming-content {
+    float: left;
+    font-size: 14px;
+    margin-left: 20px;
+    width: 90%;
+    word-break: keep-all;
+}
+
+.niming-pubtime {
+    color: #999999;
+    font-size: 12px;
+    float: right;
+    display: block;
+    margin-top: -20px;
+}
+
+.niming-feed {
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.niming-feed ul li {
+    float: left;
+    width: 33%;
+    font-size: 12px;
+    color: #555555;
+    line-height: 250%;
+    border-top: 1px solid #d2d2d2;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+.niming-feed ul li a{
+    display: block;
+    width: 100%;
+    height: 39px;
+    text-align: center;
+}
+.niming-feed ul li:hover {
+    background-color: #eeeeee;
+}
+
+#box {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    background: #333333;
+    overflow: hidden;
+
+}
+
+#area {
+    width: 99%;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: center;
+}
+.pub-btn{
+    background-color: #6796b2;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 80px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .niming-sidebar{
+        display: none;
+    }
+    .niming-container{
+     width: 100%;
+    }
+    .niming-main-container{
+      width: 100%;
+    }
+    .niming-content{
+        width: 90%;
+    }
+    .pub-btn{
+        display: inherit;
+    }
+}

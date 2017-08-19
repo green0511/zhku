@@ -1,0 +1,202 @@
+/*大屏时导航样式
+==============================================================*/
+@media screen and (min-width: 900px) {
+    /*顶栏样式
+    =====================================*/
+    #header {
+        background-color: #ffffff;
+        z-index: 1000;
+        height: 60px;
+    }
+
+    #nav-container {
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1000;
+        width: 1200px;
+    }
+
+    .logo {
+        float: left;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    /*搜索框样式
+    =====================================*/
+    #search-area {
+        float: right;
+        position: relative;
+        height: 30px;
+        width: 200px;
+        margin: 15px 0;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    #search-area input:-ms-input-placeholder,
+    #search-area textarea:-ms-input-placeholder {
+        color: #ffffff;
+    }
+
+    #search-area input::-webkit-input-placeholder,
+    #search-area textarea::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+
+    .input-default {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 0 15px;
+        text-indent: 0.5em;
+        height: 26px;
+        width: 100%;
+        color: inherit;
+        background-color: #d2d2d2;
+        background-image: url("../img/Search.png");
+        background-position: 95%;
+        background-repeat: no-repeat;
+        border: 1px solid #d2d2d2;
+        background-size: 22px 22px;
+        transition: background-color 0.2s ease-in;
+        float: right;
+    }
+
+    .input-default:focus {
+        background-color: #51e1b0;
+        color: #ffffff;
+    }
+
+    /*菜单样式
+    =====================================*/
+    .menu-list li {
+        display: block;
+        float: left;
+        color: darkgray;
+        font-size: 14px;
+    }
+
+    .menu-list li a {
+        width: 100px;
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        transition: background-color 0.2s ease-in;
+    }
+
+    .menu-list li a:hover {
+        color: White;
+        background-color: #51e1b0;
+    }
+
+    .nav-active {
+        color: #ffffff;
+        background-color: #51e1b0;
+    }
+    #menu-ico{
+        display: none;
+    }
+}
+/*移动设备时导航样式
+=====================================*/
+@media screen and (max-width: 900px){
+    .menu-clearfix{
+        clear: both;
+    }
+    #header {
+        background-color: #ffffff;
+        z-index: 1000;
+        height: 60px;
+    }
+    .logo{
+        margin-left: 10px;
+        float: left;
+        height: 60px;
+    }
+    .nav-active {
+        color: #ffffff;
+        background-color: #51e1b0;
+    }
+    /* #导航栏
+===========================================# */
+    #menu-list{
+        display: none;
+        height: 40px;
+        z-index: 99999;
+    }
+    .menu-list{
+        height: 100%;
+        z-index: 99999;
+    }
+    .menu-list li{
+        width: 100%;
+        background-color: #23b684;
+        color: #ffffff;
+        font-size: 20px;
+        height: 100%;
+        line-height: 200%;
+    //border-bottom: 1px solid #51e1b0;
+        z-index: 99999;
+    }
+    .menu-list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        text-indent: 0.5em;
+        z-index: 999990;
+    }
+    /* #搜索框
+    ===========================================# */
+    #search-area {
+        display: none;
+        width: 100%;
+        height: 40px;
+        background-color: #b2b2b2;
+        font-size: 12px;
+        transition: height 0.5s ease;
+    }
+    .input-default{
+        width: 98%;
+        height: 80%;
+        background-color: #999999;
+        margin-top: 4px;
+        text-indent: 0.5em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-image: url("../img/Search.png");
+        background-position: 95%;
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+    }
+    #search-area input:-ms-input-placeholder,
+    #search-area textarea:-ms-input-placeholder {
+        color: #ffffff;
+    }
+
+    #search-area input::-webkit-input-placeholder,
+    #search-area textarea::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+    /* #移动端菜单按钮
+    ===========================================# */
+    /*#menu-ico{*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*background-image: url("../icons/menu.png");*/
+        /*background-size: cover;*/
+        /*display: block;*/
+        /*float: right;*/
+        /*margin: 15px;*/
+        /*cursor: pointer;*/
+    /*}*/
+    #menu-ico{
+        width: 30px;
+        height: 30px;
+        float: right;
+    }
+}
